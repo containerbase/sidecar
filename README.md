@@ -1,6 +1,6 @@
 [![Build status](https://github.com/containerbase/sidecar/workflows/build/badge.svg)](https://github.com/containerbase/sidecar/actions?query=workflow%3Abuild)
-[![Docker Image Size](https://img.shields.io/docker/image-size/renovate/sidecar/latest)](https://hub.docker.com/r/renovate/sidecar)
-[![Version](https://img.shields.io/docker/v/renovate/sidecar/latest)](https://hub.docker.com/r/renovate/sidecar)
+[![Docker Image Size](https://img.shields.io/docker/image-size/containerbase/sidecar/latest)](https://hub.docker.com/r/containerbase/sidecar)
+[![Version](https://img.shields.io/docker/v/containerbase/sidecar/latest)](https://hub.docker.com/r/containerbase/sidecar)
 
 # docker-sidecar
 

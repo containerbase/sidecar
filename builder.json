@@ -1,0 +1,7 @@
+{
+  "image": "sidecar",
+  "versioning": "semver",
+  "startVersion": "2.0.0",
+  "cache": "docker-build-cache",
+  "buildArg": "BUILDPACK_VERSION"
+}

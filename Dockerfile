@@ -1,9 +1,9 @@
 # renovate: datasource=docker depName=containerbase/buildpack
-ARG SIDECAR_VERSION=2.2.2
+ARG BUILDPACK_VERSION=2.2.2
 
-FROM ghcr.io/containerbase/buildpack:${SIDECAR_VERSION}
+FROM ghcr.io/containerbase/buildpack:${BUILDPACK_VERSION}
 
 LABEL org.opencontainers.image.source="https://github.com/renovatebot/docker-sidecar" \
-      org.opencontainers.image.version="${SIDECAR_VERSION}"
+      org.opencontainers.image.version="${BUILDPACK_VERSION}"
 
 USER 1000

@@ -61,7 +61,7 @@ jobs:
         if: env.DRY_RUN == 'false'
         with:
           allowUpdates: true
-          body: See https://github.com/containerbase/buildpack/releases/tag/v${{ env.VERSION }} for more changes
+          body: See https://github.com/containerbase/buildpack/releases/tag/${{ env.VERSION }} for more changes
           commit: ${{ github.sha }}
           name: ${{ env.VERSION }}
           tag: v${{ env.VERSION }}

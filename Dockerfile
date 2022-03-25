@@ -1,5 +1,5 @@
 # renovate: datasource=docker depName=containerbase/buildpack
-ARG BUILDPACK_VERSION=3.12.4
+ARG BUILDPACK_VERSION=3.13.1
 
 FROM ghcr.io/containerbase/buildpack:${BUILDPACK_VERSION}
 

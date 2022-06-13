@@ -4,7 +4,7 @@
   "packageRules": [
     {
       "matchPackageNames": ["ghcr.io/containerbase/buildpack", "containerbase/buildpack"],
-      "pinDigest": false
+      "pinDigests": false
     }
   ]
 }

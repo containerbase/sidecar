@@ -1,4 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["local>containerbase/.github"]
+  "extends": ["local>containerbase/.github"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["ghcr.io/containerbase/buildpack", "containerbase/buildpack"],
+      "pinDigest": false
+    }
+  ]
 }

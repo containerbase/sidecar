@@ -3,8 +3,8 @@
   "extends": ["local>containerbase/.github"],
   "packageRules": [
     {
-      "matchPackageNames": ["ghcr.io/containerbase/buildpack", "containerbase/buildpack"],
-      "pinDigests": false
+      "matchManagers": ["dockerfile"],
+      "enabled": false
     }
   ]
 }

@@ -38,7 +38,7 @@ jobs:
           echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ env.OWNER }} --password-stdin
 
       - name: Publish to docker.io
-        uses: renovatebot/internal-tools@398845862f453798d77377861116d2aa064bc814 # tag=v1.14.7
+        uses: renovatebot/internal-tools@1a64621ad4bbef261f9e9ecbb529df9cfb6b3142 # v1.14.8
         with:
           command: docker-builder
           image-prefix: ${{ env.OWNER }}
@@ -47,7 +47,7 @@ jobs:
           dry-run: ${{ env.DRY_RUN }}
 
       - name: Publish to ghcr.io
-        uses: renovatebot/internal-tools@398845862f453798d77377861116d2aa064bc814 # tag=v1.14.7
+        uses: renovatebot/internal-tools@1a64621ad4bbef261f9e9ecbb529df9cfb6b3142 # v1.14.8
         with:
           command: docker-builder
           image-prefix: ghcr.io/${{ env.OWNER }}

@@ -7,4 +7,4 @@
 
 This repository is the source for the Docker Hub image [`containerbase/sidecar`](https://hub.docker.com/r/containerbase/sidecar).
 Commits to `main` branch are automatically build and published.
-This image is also available as `ghcr.io/containerbase/sidecar`
+This image is also available as `ghcr.io/containerbase/sidecar`.

@@ -1,7 +1,7 @@
 # renovate: datasource=docker depName=containerbase/buildpack
 ARG BUILDPACK_VERSION=6.1.1
 
-FROM ghcr.io/containerbase/buildpack:${BUILDPACK_VERSION}
+FROM ghcr.io/containerbase/base:${BUILDPACK_VERSION}
 
 LABEL org.opencontainers.image.source="https://github.com/containerbase/sidecar" \
       org.opencontainers.image.version="${BUILDPACK_VERSION}"

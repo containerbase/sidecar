@@ -2,7 +2,7 @@
 
 set -eo pipefail
 
-FROM=$(grep 'BUILDPACK_VERSION' Dockerfile)
+FROM=$(grep 'CONTAINERBASE_VERSION' Dockerfile)
 SEMVER_REGEX="=v?(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(-[a-z0-9]+)?"
 
 

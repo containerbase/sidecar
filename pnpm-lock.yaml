@@ -652,9 +652,10 @@ snapshots:
 
   prettier-plugin-packagejson@2.5.0(prettier@3.2.5):
     dependencies:
-      prettier: 3.2.5
       sort-package-json: 2.10.0
       synckit: 0.9.0
+    optionalDependencies:
+      prettier: 3.2.5
 
   prettier@3.2.5: {}
 

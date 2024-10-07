@@ -6,6 +6,13 @@
     {
       "matchManagers": ["dockerfile"],
       "enabled": false
+    },
+    {
+      "description": "Disable base image major on maintenance branches",
+      "matchBaseBranches": ["/^maint/.+/"],
+      "matchDepNames": ["ghcr.io/containerbase/base"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
     }
   ]
 }

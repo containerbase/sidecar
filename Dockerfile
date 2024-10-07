@@ -1,5 +1,5 @@
 # renovate: datasource=docker depName=ghcr.io/containerbase/base
-ARG CONTAINERBASE_VERSION=11.11.29
+ARG CONTAINERBASE_VERSION=12.0.1
 
 FROM ghcr.io/containerbase/base:${CONTAINERBASE_VERSION}
 
@@ -10,4 +10,4 @@ LABEL org.opencontainers.image.source="https://github.com/containerbase/sidecar"
 
 RUN prepare-tool all
 
-USER 1000
+USER 12021

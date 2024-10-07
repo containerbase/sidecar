@@ -10,4 +10,4 @@ LABEL org.opencontainers.image.source="https://github.com/containerbase/sidecar"
 
 RUN prepare-tool all
 
-USER 1000
+USER 12021

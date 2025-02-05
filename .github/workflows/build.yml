@@ -71,8 +71,28 @@ jobs:
           major-minor: false
           dry-run: ${{ env.DRY_RUN }}
 
+  success:
+    runs-on: ubuntu-24.04
+    needs:
+      - lint
+      - build
+    timeout-minutes: 1
+    if: always()
+    steps:
+      - name: Fail for failed or cancelled build
+        if: |
+          needs.build.result == 'failure' ||
+          needs.build.result == 'cancelled'
+        run: exit 1
+      - name: Fail for failed or cancelled lint
+        if: |
+          needs.lint.result == 'failure' ||
+          needs.lint.result == 'cancelled'
+        run: exit 1
+
   release:
-    needs: build
+    needs:
+      - success
     runs-on: ubuntu-24.04
     permissions:
       contents: write

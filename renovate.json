@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["local>containerbase/.github"],
-  "baseBranches": ["$default", "zzz/don-not-delete"],
+  "baseBranchPatterns": ["$default", "zzz/don-not-delete"],
   "packageRules": [
     {
       "matchManagers": ["dockerfile"],

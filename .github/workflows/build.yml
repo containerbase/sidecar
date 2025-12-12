@@ -25,7 +25,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: ⚙️ Setup
-        uses: containerbase/internal-tools/setup@2304a46e39979e468bda0ebd91127e008b0b0723 # v3.14.30
+        uses: containerbase/internal-tools/setup@a34848e2bd8f12cb3f2d0e24274702d078bf23cc # v3.14.31
         with:
           save-cache: true
       - run: pnpm prettier
@@ -52,7 +52,7 @@ jobs:
           echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ env.OWNER }} --password-stdin
 
       - name: Publish to ghcr.io and docker.io
-        uses: containerbase/internal-tools@2304a46e39979e468bda0ebd91127e008b0b0723 # v3.14.30
+        uses: containerbase/internal-tools@a34848e2bd8f12cb3f2d0e24274702d078bf23cc # v3.14.31
         with:
           command: docker-builder
           image-prefix: ghcr.io/${{ env.OWNER }}

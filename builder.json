@@ -1,7 +1,7 @@
 {
   "image": "sidecar",
   "versioning": "semver",
-  "startVersion": "2.0.0",
+  "startVersion": "14.0.0",
   "cache": "docker-build-cache",
   "buildArg": "CONTAINERBASE_VERSION"
 }

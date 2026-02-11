@@ -1,5 +1,5 @@
 # renovate: datasource=docker depName=ghcr.io/containerbase/base
-ARG CONTAINERBASE_VERSION=14.0.1
+ARG CONTAINERBASE_VERSION=14.0.11
 
 FROM ghcr.io/containerbase/base:${CONTAINERBASE_VERSION}
 

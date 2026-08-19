@@ -11,3 +11,9 @@ This image is also available as [`containerbase/sidecar`](https://hub.docker.com
 
 This image is used as the default "sidecar" image for Renovate when it uses `binarySource=docker`.
 It is intended that all Containerbase tools are "prepared" with their prerequisites installated into this image so that installation can be done at runtime without root privileges.
+
+## Build dependencies
+
+`prepare-tool all` also prepares Conan, whose compiler toolchain includes `gcc` and `g++`.
+On Ubuntu, the C++ development packages depend on `libc6-dev`, which in turn depends on `linux-libc-dev`.
+The kernel userspace headers are therefore an intentional part of this image; removing them would leave the prepared Conan compiler toolchain with broken package dependencies.

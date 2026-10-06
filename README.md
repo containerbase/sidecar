@@ -21,5 +21,5 @@ This repository is the source for the Github container registry image [`ghcr.io/
 Commits to `main` branch are automatically build and published.
 This image is also available as [`containerbase/sidecar`](https://hub.docker.com/r/containerbase/sidecar) on Docker Hub.
 
-All Containerbase tools are "prepared" with their prerequisites installed into this image, so that installation can be done at runtime without root privileges.
+All Containerbase tools are "prepared" with their prerequisites installed into this image, so that all tools except the root-only ones (`root: true`) can be installed at runtime without root privileges.
 Renovate doesn't use this image anymore: the [Renovate base image](https://github.com/renovatebot/base-image) runs `prepare-tool all` itself and is Renovate's default sidecar image for `binarySource=docker`.
